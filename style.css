@@ -1,25 +1,112 @@
-@media screen and (max-width:1000px) {
-    body {
-        background-color:;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Playfair+Display:ital@1&display=swap');
 
-    nav {
-        flex-direction: column;
-    }
+:root {
+    --main-bg-color: #2874f0;
+    ;
+}
 
-    .logo {
-        justify-content: center;
-        margin: 10px 0;
-    }
-    nav ul{
-        justify-content: center;
-        height: 22px;
-    }
-    .searchbar{
-        justify-content: center;
-    }
-    .searchbar input{
-        margin: 12px 16px;
-        
-    }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    /* border: 2px solid red; */
+    font-family: 'Playfair Display', serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+
+    font-weight: bolder;
+
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar button {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+.searchbar input {
+    width: 40vw;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0 30px;
+    padding: 0 15px;
+}
+.slider img {
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 1308px;
+}
+
+.container {
+    min-height: calc(100vh - 12vh - 12vh);
+}
+
+.card {
+    background-color: lightblue;
+    display: flex;
+    overflow: scroll;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-item img {
+    width: 200px;
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.text-center {
+    text-align: center;
 }
